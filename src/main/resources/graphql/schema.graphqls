@@ -1,0 +1,16 @@
+type Query{
+    getAllOwners:[Owner],
+}
+
+type Mutation{
+    deleteOwner(id:Int):Boolean
+}
+
+
+type Owner{
+  id:Int,
+  name:String,
+  Date:String,
+  email:String
+
+}
