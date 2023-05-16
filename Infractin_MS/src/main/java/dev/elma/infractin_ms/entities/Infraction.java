@@ -1,5 +1,9 @@
 package dev.elma.infractin_ms.entities;
 
+
+import dev.elma.infractin_ms.models.Radar;
+import dev.elma.infractin_ms.models.Vehicle;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
