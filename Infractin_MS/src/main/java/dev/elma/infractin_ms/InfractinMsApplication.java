@@ -1,15 +1,18 @@
 package dev.elma.infractin_ms;
 
+import dev.elma.infractin_ms.entities.Infraction;
 import dev.elma.infractin_ms.feignApi.RadarsRestClient;
 import dev.elma.infractin_ms.feignApi.VehiclesRestClient;
 import dev.elma.infractin_ms.models.Radar;
 import dev.elma.infractin_ms.models.Vehicle;
+import dev.elma.infractin_ms.repositories.InfractionRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
+import java.util.Date;
 import java.util.List;
 
 @SpringBootApplication
@@ -17,6 +20,7 @@ import java.util.List;
 public class InfractinMsApplication implements CommandLineRunner {
 	RadarsRestClient radarsRestClient;
 	VehiclesRestClient vehiclesRestClient;
+	InfractionRepository infractionRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(InfractinMsApplication.class, args);
@@ -30,13 +34,17 @@ public class InfractinMsApplication implements CommandLineRunner {
 		List<Radar> allRadars = radarsRestClient.getAllRadars();
 
 
-		allVehicle.forEach(v->{
-			System.out.println(v);
-		});
+		Vehicle vehicleX = vehiclesRestClient.getVehiclebyRegNumber("fa4ba291-c56a-43cc-a865-bed21af34cb7");
+		Radar radar = radarsRestClient.getRadarById(1);
 
-		allRadars.forEach(r->{
-			System.out.println(r);
-		});
+
+
+		Infraction infraction = Infraction.builder().idRadr(1).registrationNumber(vehicleX.getRegistrationNumber())
+				.radarMaxSpeed(radar.getVitessMax()).vehicleSpeed(150).date(new Date()).amount(600D).vehicle(vehicleX).radar(radar).build();
+		infractionRepository.save(infraction);
+
+		//System.out.println(infraction);
+
 
 
 

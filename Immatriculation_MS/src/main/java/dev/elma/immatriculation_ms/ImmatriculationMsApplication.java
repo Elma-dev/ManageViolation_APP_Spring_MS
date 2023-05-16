@@ -8,6 +8,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 
 import java.util.Date;
 import java.util.UUID;
@@ -17,7 +18,7 @@ import java.util.stream.Stream;
 public class ImmatriculationMsApplication implements CommandLineRunner {
     private OwnerRepository ownerRepository;
     private VehicleRepository vehicleRepository;
-
+    private RepositoryRestConfiguration repositoryRestConfiguration;
     public static void main(String[] args) {
         SpringApplication.run(ImmatriculationMsApplication.class, args);
     }
@@ -25,6 +26,7 @@ public class ImmatriculationMsApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        repositoryRestConfiguration.exposeIdsFor(VehicleRepository.class);
         Stream.of("Ahmed","Mohammed","Abdeljalil").forEach(n->{
             Owner owner = Owner.builder().name(n).email(n + "@gmail.com").birthDay(new Date()).build();
             this.ownerRepository.save(owner);

@@ -22,6 +22,11 @@ public class RestAPI {
         return ownerRepository.findAll();
     }
 
+    @GetMapping("/owners/{id}")
+    public Owner getOwnerById(@PathVariable long id){
+        return ownerRepository.findOwnerById(id);
+    }
+
     @PostMapping("/owners")
     public Owner addOwner(@RequestBody Owner owner){
 
@@ -46,6 +51,12 @@ public class RestAPI {
     @GetMapping("/vehicles")
     public List<Vehicle> getAllVehicles(){
         return vehicleRepository.findAll();
+    }
+
+    @GetMapping("/vehicles/{id}")
+    public Vehicle getVehicleById(@PathVariable String id){
+        return vehicleRepository.findVehicleByRegNumb(id);
+
     }
 
 
