@@ -9,6 +9,4 @@ import java.util.List;
 @AllArgsConstructor
 public class GraphQlAPI {
 
-
-
 }
