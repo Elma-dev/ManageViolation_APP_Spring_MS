@@ -16,14 +16,15 @@ public class GatewayMsApplication {
         SpringApplication.run(GatewayMsApplication.class, args);
     }
 
-    /*
+
     @Bean
     DiscoveryClientRouteDefinitionLocator discoveryClientRouteDefinitionLocator(ReactiveDiscoveryClient rdc, DiscoveryLocatorProperties properties){
         return new DiscoveryClientRouteDefinitionLocator(rdc,properties);
     }
 
-     */
 
+
+    /*
     @Bean
     RouteLocator routeLocator(RouteLocatorBuilder routeLocatorBuilder){
         return routeLocatorBuilder.routes()
@@ -32,6 +33,7 @@ public class GatewayMsApplication {
                 .route(r->r.path("/radars/**").uri("http://localhost:8082"))
                 .build();
     }
+     */
 
 
 }

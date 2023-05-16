@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>dev.elma</groupId>
-    <artifactId>Gateway_Service_Spring</artifactId>
+    <artifactId>Gateway_MS</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Gateway_Service_Spring</name>
-    <description>Gateway_Service_Spring</description>
+    <name>Gateway_MS</name>
+    <description>Gateway_MS</description>
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2022.0.2</spring-cloud.version>
