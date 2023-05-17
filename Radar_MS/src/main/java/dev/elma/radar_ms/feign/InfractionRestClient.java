@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @FeignClient("INFRACTION-MS")
 public interface InfractionRestClient {
-    @PostMapping("/fractions/add")
+    @PostMapping("/infractions/add")
     Infraction saveNewInfraction(@RequestBody  NewInfracInfo newInfracInfo);
 
 }

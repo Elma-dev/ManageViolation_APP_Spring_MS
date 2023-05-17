@@ -29,6 +29,7 @@ public class RestAPI {
     @PostMapping("/radars/newInfraction")
     public Infraction saveInfractionFromRadar(@RequestBody NewInfracInfo newInfracInfo){
         return infractionRestClient.saveNewInfraction(newInfracInfo);
+
     }
 
 

@@ -9,6 +9,8 @@ public class Infraction {
     private Date date;
     private long idRadr;
     private String registrationNumber;
+    private Radar radar;
+    private Vehicle vehicle;
     private double radarMaxSpeed;
     private double vehicleSpeed;
     private double amount;
