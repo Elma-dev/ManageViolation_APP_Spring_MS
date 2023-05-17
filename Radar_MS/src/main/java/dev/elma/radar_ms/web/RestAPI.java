@@ -26,9 +26,11 @@ public class RestAPI {
     public Radar findRadarById(@PathVariable long id){
         return  radarRepository.findRadarById(id);
     };
-    @PostMapping("/radars/newInfraction")
-    public Infraction saveInfractionFromRadar(@RequestBody NewInfracInfo newInfracInfo){
-        return infractionRestClient.saveNewInfraction(newInfracInfo);
+    @PostMapping("/newInfraction")
+    public boolean saveInfractionFromRadar(@RequestBody NewInfracInfo newInfracInfo){
+
+        infractionRestClient.saveNewInfraction(newInfracInfo);
+        return true;
 
     }
 

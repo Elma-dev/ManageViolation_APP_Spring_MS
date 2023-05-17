@@ -44,6 +44,19 @@
 		</dependency>
 
 		<dependency>
+			<groupId>io.quarkus</groupId>
+			<artifactId>quarkus-grpc</artifactId>
+			<version>3.0.3.Final</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.quarkus/quarkus-arc -->
+		<dependency>
+			<groupId>io.quarkus</groupId>
+			<artifactId>quarkus-arc</artifactId>
+			<version>3.0.3.Final</version>
+		</dependency>
+
+		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
 			<version>4.0.2</version>
@@ -89,6 +102,8 @@
 			<artifactId>spring-graphql-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
@@ -116,6 +131,27 @@
 					</excludes>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>org.openapitools</groupId>
+				<artifactId>openapi-generator-maven-plugin</artifactId>
+				<!-- RELEASE_VERSION -->
+				<version>6.0.0</version>
+				<!-- /RELEASE_VERSION -->
+				<executions>
+					<execution>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+						<configuration>
+							<inputSpec>${project.basedir}/src/main/java/dev/elma/radar_ms/openapi/api-docs.json</inputSpec>
+							<generatorName>protobuf-schema</generatorName>
+							<output>${project.basedir}/src/main/java/dev/elma/radar_ms/stubs</output> <!-- feed to Quarkus grpc generator below -->
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
 		</plugins>
 	</build>
 	<repositories>
