@@ -2,11 +2,13 @@ package dev.elma.radar_ms.web;
 
 
 import dev.elma.radar_ms.entities.Radar;
+import dev.elma.radar_ms.feign.InfractionRestClient;
+import dev.elma.radar_ms.models.Infraction;
+import dev.elma.radar_ms.models.NewInfracInfo;
 import dev.elma.radar_ms.repositories.RadarRepository;
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -14,6 +16,7 @@ import java.util.List;
 @AllArgsConstructor
 public class RestAPI {
     private RadarRepository radarRepository;
+    private InfractionRestClient infractionRestClient;
 
     @GetMapping("/radars")
     public List<Radar> getAllRadars(){
@@ -23,6 +26,10 @@ public class RestAPI {
     public Radar findRadarById(@PathVariable long id){
         return  radarRepository.findRadarById(id);
     };
+    @PostMapping("/radars/newInfraction")
+    public Infraction saveInfractionFromRadar(@RequestBody NewInfracInfo newInfracInfo){
+        return infractionRestClient.saveNewInfraction(newInfracInfo);
+    }
 
 
 

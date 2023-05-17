@@ -6,11 +6,12 @@ import lombok.AllArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 
 import java.util.Random;
 
-@SpringBootApplication @AllArgsConstructor
+@SpringBootApplication @AllArgsConstructor @EnableFeignClients
 public class RadarMsApplication implements CommandLineRunner {
 
 	private RadarRepository radarRepository;
