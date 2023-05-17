@@ -3,6 +3,7 @@ package dev.elma.infractin_ms.web;
 import dev.elma.infractin_ms.entities.Infraction;
 import dev.elma.infractin_ms.feignApi.RadarsRestClient;
 import dev.elma.infractin_ms.feignApi.VehiclesRestClient;
+import dev.elma.infractin_ms.models.NewInfracInfo;
 import dev.elma.infractin_ms.models.Radar;
 import dev.elma.infractin_ms.models.Vehicle;
 import dev.elma.infractin_ms.repositories.InfractionRepository;
@@ -38,13 +39,13 @@ public class RestAPI {
     }
 
     @PostMapping("/infractions/add")
-    public Infraction addInfraction(@RequestBody long idRadar,@RequestBody String regNbr,@RequestBody double vehicleSpeed){
-        Vehicle vehicle = vehiclesRestClient.getVehiclebyRegNumber(regNbr);
-        Radar radar = radarsRestClient.getRadarById(idRadar);
+    public Infraction addInfraction(@RequestBody NewInfracInfo newInfracInfo){
+        Vehicle vehicle = vehiclesRestClient.getVehiclebyRegNumber(newInfracInfo.getRegNbr());
+        Radar radar = radarsRestClient.getRadarById(newInfracInfo.getIdRadar());
 
-        Infraction infraction = Infraction.builder().date(new Date()).idRadr(idRadar).radar(radar)
-                .registrationNumber(regNbr).vehicle(vehicle).radarMaxSpeed(radar.getVitessMax())
-                .vehicleSpeed(vehicleSpeed).amount(600).build();
+        Infraction infraction = Infraction.builder().date(new Date()).idRadr(newInfracInfo.getIdRadar()).radar(radar)
+                .registrationNumber(newInfracInfo.getRegNbr()).vehicle(vehicle).radarMaxSpeed(radar.getVitessMax())
+                .vehicleSpeed(newInfracInfo.getVehicleSpeed()).amount(600).build();
         return infractionRepository.save(infraction);
     }
 
