@@ -39,7 +39,8 @@ public class RadarMsApplication implements CommandLineRunner {
 
 		//create Radar
 		Random random = new Random();
-		Radar radar = Radar.builder().courdonnees(new double[]{random.nextDouble(100), random.nextDouble(59)}).vitessMax(120).build();
+		Radar radar = Radar.builder().courdonnees(new double[]{random.nextDouble(100),
+				random.nextDouble(59)}).vitessMax(120).build();
 		radarRepository.save(radar);
 	}
 

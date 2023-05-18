@@ -12,4 +12,6 @@ public interface VehicleRepository extends JpaRepository<Vehicle,String> {
     @Query("select v from Vehicle v where v.registrationNumber=:registNumber")
     Vehicle findVehicleByRegNumb(@Param("registNumber") String registNumber);
     Optional<Vehicle> findByBrand(String s);
+
+
 }

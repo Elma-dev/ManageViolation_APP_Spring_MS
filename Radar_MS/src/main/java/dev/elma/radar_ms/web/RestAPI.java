@@ -1,6 +1,5 @@
 package dev.elma.radar_ms.web;
 
-
 import dev.elma.radar_ms.entities.Radar;
 import dev.elma.radar_ms.feign.InfractionRestClient;
 import dev.elma.radar_ms.models.Infraction;
@@ -12,7 +11,6 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
 @RestController
 @AllArgsConstructor
 public class RestAPI {

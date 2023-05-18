@@ -79,7 +79,7 @@ public class RadarSimulationApplication implements CommandLineRunner {
         };
 
         Timer timer=new Timer("ticTac");
-        timer.schedule(task,20000L);
+        timer.scheduleAtFixedRate(task,0,20000L);
 
     }
 }

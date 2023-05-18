@@ -25,8 +25,6 @@ public class InfractinMsApplication implements CommandLineRunner {
 	public static void main(String[] args) {
 		SpringApplication.run(InfractinMsApplication.class, args);
 	}
-
-
 	@Override
 	public void run(String... args) throws Exception {
 
@@ -37,10 +35,10 @@ public class InfractinMsApplication implements CommandLineRunner {
 		Vehicle vehicleX = vehiclesRestClient.getVehiclebyRegNumber("98bbbd1d-f4f8-4527-ab11-7cc67482f12a");
 		Radar radar = radarsRestClient.getRadarById(1);
 
-
-
-		Infraction infraction = Infraction.builder().idRadr(1).registrationNumber(vehicleX.getRegistrationNumber())
-				.radarMaxSpeed(radar.getVitessMax()).vehicleSpeed(150).date(new Date()).amount(600D).vehicle(vehicleX).radar(radar).build();
+		Infraction infraction = Infraction.builder().idRadr(1)
+				.registrationNumber(vehicleX.getRegistrationNumber())
+				.radarMaxSpeed(radar.getVitessMax()).vehicleSpeed(150).date(new Date())
+				.amount(600D).vehicle(vehicleX).radar(radar).build();
 		infractionRepository.save(infraction);
 
 		//System.out.println(infraction);
