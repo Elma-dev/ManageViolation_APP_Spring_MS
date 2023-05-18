@@ -15,7 +15,7 @@
     <name>ManageViolation_APP</name>
     <description>ManageViolation_APP</description>
     <modules>
-        <module>RadarSimulation_GRPC</module>
+        <module>radarsimulation</module>
     </modules>
     <properties>
         <java.version>17</java.version>
