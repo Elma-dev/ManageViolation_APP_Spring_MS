@@ -17,6 +17,8 @@ import org.springframework.web.client.RestTemplate;
 
 import java.time.Duration;
 import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
 
 @SpringBootApplication @AllArgsConstructor
 public class RadarSimulationApplication implements CommandLineRunner {
@@ -38,10 +40,46 @@ public class RadarSimulationApplication implements CommandLineRunner {
         Vehicle[] allVehicles = restTempServices.getAllVehicles();
         //createRandomIndex
         Random random=new Random();
-
-        NewInfracInfo newInfracInfo = NewInfracInfo.builder().idRadar(1).regNbr("2340a555-c142-427d-ac8a-c132a909c2ac").vehicleSpeed(300).build();
+        //randomIndexes
+        int indxRadar = random.nextInt(allRadars.length);
+        int indxVehicle = random.nextInt(allVehicles.length);
+        //SelecteIndexesVariable
+        Radar selectedRadar=allRadars[indxRadar];
+        Vehicle selectedVehicle=allVehicles[indxVehicle];
+        //RandomSpeeedOfVehicle
+        double vehicleSpeed=random.nextDouble(selectedRadar.getVitessMax(),selectedRadar.getVitessMax()+random.nextInt(1,100));
+        //sendNewInfraction
+        NewInfracInfo newInfracInfo = NewInfracInfo.builder().idRadar(selectedRadar.getId()).regNbr(selectedVehicle.getRegistrationNumber()).vehicleSpeed(vehicleSpeed).build();
         boolean results = restTempServices.senInfraction(newInfracInfo);
         System.out.println(results);
+
+        TimerTask task=new TimerTask() {
+            @Override
+            public void run() {
+                //getAllRadars
+                Radar[] allRadars = restTempServices.getAllRadars();
+                //getAllVehicles
+                Vehicle[] allVehicles = restTempServices.getAllVehicles();
+                //createRandomIndex
+                Random random=new Random();
+                //randomIndexes
+                int indxRadar = random.nextInt(allRadars.length);
+                int indxVehicle = random.nextInt(allVehicles.length);
+                //SelecteIndexesVariable
+                Radar selectedRadar=allRadars[indxRadar];
+                Vehicle selectedVehicle=allVehicles[indxVehicle];
+                //RandomSpeeedOfVehicle
+                double vehicleSpeed=random.nextDouble(selectedRadar.getVitessMax(),selectedRadar.getVitessMax()+random.nextInt(1,100));
+                //sendNewInfraction
+                NewInfracInfo newInfracInfo = NewInfracInfo.builder().idRadar(selectedRadar.getId()).regNbr(selectedVehicle.getRegistrationNumber()).vehicleSpeed(vehicleSpeed).build();
+                boolean results = restTempServices.senInfraction(newInfracInfo);
+                System.out.println(results);
+
+            }
+        };
+
+        Timer timer=new Timer("ticTac");
+        timer.schedule(task,20000L);
 
     }
 }
