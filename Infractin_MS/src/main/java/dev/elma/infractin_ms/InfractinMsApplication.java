@@ -34,7 +34,7 @@ public class InfractinMsApplication implements CommandLineRunner {
 		List<Radar> allRadars = radarsRestClient.getAllRadars();
 
 
-		Vehicle vehicleX = vehiclesRestClient.getVehiclebyRegNumber("bb18b9be-cf58-4cf0-a07c-e9f81a9c9f9c");
+		Vehicle vehicleX = vehiclesRestClient.getVehiclebyRegNumber("98bbbd1d-f4f8-4527-ab11-7cc67482f12a");
 		Radar radar = radarsRestClient.getRadarById(1);
 
 

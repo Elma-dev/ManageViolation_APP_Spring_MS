@@ -8,6 +8,7 @@ import dev.elma.radar_ms.models.NewInfracInfo;
 import dev.elma.radar_ms.repositories.RadarRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -28,12 +29,8 @@ public class RestAPI {
     };
     @PostMapping("/newInfraction")
     public boolean saveInfractionFromRadar(@RequestBody NewInfracInfo newInfracInfo){
-
         infractionRestClient.saveNewInfraction(newInfracInfo);
         return true;
 
     }
-
-
-
 }
