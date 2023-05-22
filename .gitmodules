@@ -1,0 +1,3 @@
+[submodule "ManageViolationApp_Front"]
+	path = ManageViolationApp_Front
+	url = https://github.com/Elma-dev/ManageViolationApp_Front.git
