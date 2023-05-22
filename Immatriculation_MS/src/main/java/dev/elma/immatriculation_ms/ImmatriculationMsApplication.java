@@ -27,7 +27,7 @@ public class ImmatriculationMsApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         repositoryRestConfiguration.exposeIdsFor(VehicleRepository.class);
-        Stream.of("Ahmed","Mohammed","Abdeljalil").forEach(n->{
+        Stream.of("Ahmed","Mohammed","Abdeljalil","Abderrahim").forEach(n->{
             Owner owner = Owner.builder().name(n).email(n + "@gmail.com").birthDay(new Date()).build();
             this.ownerRepository.save(owner);
         });

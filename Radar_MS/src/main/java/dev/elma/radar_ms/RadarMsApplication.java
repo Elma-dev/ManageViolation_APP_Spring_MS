@@ -23,6 +23,7 @@ import org.springframework.http.converter.protobuf.ProtobufJsonFormatHttpMessage
 
 import java.io.IOException;
 import java.util.Random;
+import java.util.stream.Stream;
 
 @SpringBootApplication @AllArgsConstructor @EnableFeignClients
 public class RadarMsApplication implements CommandLineRunner {
@@ -38,10 +39,13 @@ public class RadarMsApplication implements CommandLineRunner {
 		repositoryRestConfiguration.exposeIdsFor(Radar.class);
 
 		//create Radar
-		Random random = new Random();
-		Radar radar = Radar.builder().courdonnees(new double[]{random.nextDouble(100),
-				random.nextDouble(59)}).vitessMax(120).build();
-		radarRepository.save(radar);
+		Stream.of(1,2,3,4,5).forEach(i->{
+			Random random = new Random();
+			Radar radar = Radar.builder().courdonnees(new double[]{random.nextDouble(100),
+					random.nextDouble(59)}).vitessMax(120).build();
+			radarRepository.save(radar);
+		});
+
 	}
 
 
