@@ -245,7 +245,8 @@ This server holds information about the client service applications.
     </tr>
     <tr>
         <td><img src="images/vehTest.jpg"/></td>
-        
+        <td><img src="images/radars.jpg"/></td>
+        <td><img src="images/infractions.jpg"/></td>
     </tr>
 </table>
 
