@@ -289,4 +289,36 @@ speed excesses and send them, via GRPC, to Radar-Service
 ```
 ## Radar Simulator Test
 ![image](https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/assets/67378945/6f095535-f8b2-4077-9cde-900c7d07116d)
+# Project Results ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+
+<table align="center">
+    <tr>
+        <th>Authentication Page</th>
+        <th>Home Page</th>
+    </tr>
+    <tr>
+        <td><img src="images/auth.jpg"/></td>
+         <td><img src="images/home.jpg"/></td>
+    </tr>
+</table>
+
+<table align="center">
+    <tr>
+        <th>Registration Page</th>
+        <th>Radars Page</th>
+    </tr>
+    <tr>
+        <td><img src="images/vehiclesPage.jpg"/></td>
+         <td><img src="images/radarsPage.jpg"/></td>
+    </tr>
+</table>
+
+<table align="center">
+    <tr>
+        <th>Violations Page</th>
+    </tr>
+    <tr>
+        <td><img src="images/violationPages.jpg"/></td>
+    </tr>
+</table>
 
