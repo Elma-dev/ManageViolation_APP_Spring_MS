@@ -52,9 +52,15 @@ ng serve
 # Class Diagram
 ![DiagramApp](https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/assets/67378945/57fe2516-d0c4-4bbd-9149-318dbedb00f1)
 
-# Web Services  Schema
+# Web Services  Structure (Backend)
 There are five services in all, as stated in the project schema. Every one has a building plan.
 ## Registration Services
+```
+The micro-registration service that allows the management of vehicles belonging to the
+and owners. Each vehicle belongs to one owner. A owner is defined by his id, name, date of birth, email and email.
+A vehicle is defined by its ID, registration number, brand, tax power and model.
+```
+
 ```
 ├───src
 │   ├───main
@@ -86,6 +92,10 @@ There are five services in all, as stated in the project schema. Every one has a
 
 ```
 ## Radar Services
+```
+the radar management microservice The ID of a radar identifies it.
+Latitude and Longitude are the coordinates and maximum speed
+```
 ```
 ├───src
 │   ├───main
