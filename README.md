@@ -1,7 +1,24 @@
 # ManageViolation_APP_Spring_MS
-# Project Schema 
-![image](https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/assets/67378945/aaa02330-718e-496d-957b-9d88037a8baf)
+# Getting Started
+## 📚Prerequisite
+![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
+![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white)
+``` 
+* Spring Cloud
+* Eureka Descovery
+* H2DataBase
+* BloomRPC
+```
 
+## Installation
+
+# Project: General Schema 
+![image](https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/assets/67378945/aaa02330-718e-496d-957b-9d88037a8baf)
 # Web Services Schema
 There are five services in all, as stated in the project schema. Every one has a building plan.
 ## Registration Services
