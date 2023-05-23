@@ -157,11 +157,11 @@ There are five services in all, as stated in the project schema. Every one has a
 # Project Dependencies
 <table>
     <tr>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th>Registration</th>
+        <th>Radar</th>
+        <th>Violation</th>
+        <th>Gateway</th>
+        <th>Eureka</th>
     </tr>
     <tr>
         <td><a href="https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/blob/0fb916ac00e878670dec15f81df851d5f1ec9340/Immatriculation_MS/pom.xml"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg"/></a></td>
