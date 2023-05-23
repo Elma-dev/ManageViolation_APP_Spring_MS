@@ -134,6 +134,11 @@ Latitude and Longitude are the coordinates and maximum speed
 ```
 ## Violation Services
 ```
+The micro-service that helps to deal with infringements. Each offence is defined by its ID, its date,
+the radar number that detected the exceeding, vehicle registration, vehicle speed,maximum radar speed
+and the amount of the infringement.
+```
+```
 ├───src
 │   ├───main
 │   │   ├───java
@@ -172,6 +177,9 @@ Latitude and Longitude are the coordinates and maximum speed
 ```  
 ## Gateway Service
 ```
+API gateway is a software application between a client and a set of backend microservices. The API Gateway serves as a reverse proxy to accept API calls from the client application, forwarding this traffic to the appropriate servic
+```
+```
 ├───src
 │   ├───main
 │   │   ├───java
@@ -193,6 +201,9 @@ Latitude and Longitude are the coordinates and maximum speed
         └───annotations
 ```
 ## Eureka Service
+```
+The Eureka server is nothing but an implementation of service discovery pattern, where microservices can register themselves so others can discover them. This server holds information about the client service applications.
+```
 ```
 ├───src
 │   ├───main
