@@ -228,14 +228,27 @@ This server holds information about the client service applications.
         └───annotations
 ```
 # Web Services Test
-<table>
+<table align="center">
     <tr>
-        <td>Registrstion Web Service</td>
+        <th>Eureka Discovery</th>
     </tr>
     <tr>
-        <td><img src=""/></td>
+        <td><img src="images/eureka.jpg"/></td>
     </tr>
 </table>
+
+<table align="center">
+    <tr>
+        <th>Registration WS</th>
+        <th>Radars WS</th>
+        <th>Volation WS</th>
+    </tr>
+    <tr>
+        <td><img src="images/vehTest.jpg"/></td>
+        
+    </tr>
+</table>
+
 # Radar Simulator
 ```
 a java application that simulates a radar that randomly generates
