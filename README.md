@@ -5,6 +5,7 @@
 ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
 ![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white)
@@ -16,6 +17,34 @@
 ```
 
 ## Installation
+```
+1. Clone this repo
+git clon <!--links of repo-->
+2. Install all the dependencies
+npm install
+3. run all services (after install maven dependencies in intellijIDE)
+4. run front project
+ng serve
+``` 
+## Project Dependencies
+<table>
+    <tr>
+        <th>Registration</th>
+        <th>Radar</th>
+        <th>Violation</th>
+        <th>Gateway</th>
+        <th>Eureka</th>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/blob/0fb916ac00e878670dec15f81df851d5f1ec9340/Immatriculation_MS/pom.xml"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg"/></a></td>
+        <td><a href="https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/blob/d69ccf2cc6d23ee1d80212006e9dc7b5a86e6b44/RadarSimulation/pom.xml"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg"/></a></td>
+        <td><a href="https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/blob/3f7db6a29bbc6196781d8276c4fa50a8dbdcdfe1/Infractin_MS/pom.xml"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg"/></a></td>
+        <td><a href="https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/blob/ba99886a1363a60883e0777ec16314e44aab1a10/Gateway_MS/pom.xml"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg"/></a></td>
+        <td><a href="https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/blob/0ed98d3561a8a89379ba6113a4d38eac443187d9/Eureka_Discovery_MS/pom.xml"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg"/></a></td>
+    </tr>
+</table>
+
+
 
 # Project: General Schema 
 ![image](https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/assets/67378945/aaa02330-718e-496d-957b-9d88037a8baf)
@@ -171,21 +200,3 @@ There are five services in all, as stated in the project schema. Every one has a
     └───generated-sources
         └───annotations
 ```
-# Project Dependencies
-<table>
-    <tr>
-        <th>Registration</th>
-        <th>Radar</th>
-        <th>Violation</th>
-        <th>Gateway</th>
-        <th>Eureka</th>
-    </tr>
-    <tr>
-        <td><a href="https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/blob/0fb916ac00e878670dec15f81df851d5f1ec9340/Immatriculation_MS/pom.xml"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg"/></a></td>
-        <td><a href="https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/blob/d69ccf2cc6d23ee1d80212006e9dc7b5a86e6b44/RadarSimulation/pom.xml"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg"/></a></td>
-        <td><a href="https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/blob/3f7db6a29bbc6196781d8276c4fa50a8dbdcdfe1/Infractin_MS/pom.xml"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg"/></a></td>
-        <td><a href="https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/blob/ba99886a1363a60883e0777ec16314e44aab1a10/Gateway_MS/pom.xml"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg"/></a></td>
-        <td><a href="https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/blob/0ed98d3561a8a89379ba6113a4d38eac443187d9/Eureka_Discovery_MS/pom.xml"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg"/></a></td>
-    </tr>
-</table>
-
