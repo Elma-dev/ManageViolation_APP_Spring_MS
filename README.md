@@ -227,6 +227,15 @@ This server holds information about the client service applications.
     └───generated-sources
         └───annotations
 ```
+# Web Services Test
+<table>
+    <tr>
+        <td>Registrstion Web Service</td>
+    </tr>
+    <tr>
+        <td><img src=""/></td>
+    </tr>
+</table>
 # Radar Simulator
 ```
 a java application that simulates a radar that randomly generates
@@ -234,4 +243,33 @@ speed excesses and send them, via GRPC, to Radar-Service
 ```
 ![controlSd2](https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/assets/67378945/d51c6615-4b3b-4793-95f9-83cbf1da753f)
 
-
+## Radar Simulator Project Structure
+```
+├───src
+│   ├───main
+│   │   ├───java
+│   │   │   └───dev
+│   │   │       └───elma
+│   │   │           └───radarsimulation
+│   │   │               ├───configuration
+│   │   │               ├───dtos
+│   │   │               └───services
+│   │   └───resources
+│   │       ├───static
+│   │       └───templates
+│   └───test
+│       └───java
+│           └───dev
+│               └───elma
+│                   └───radarsimulation
+└───target
+    ├───classes
+    │   └───dev
+    │       └───elma
+    │           └───radarsimulation
+    │               ├───configuration
+    │               ├───dtos
+    │               └───services
+    └───generated-sources
+        └───annotations
+```
