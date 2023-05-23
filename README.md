@@ -228,14 +228,28 @@ This server holds information about the client service applications.
         └───annotations
 ```
 # Web Services Test
-<table>
+<table align="center">
     <tr>
-        <td>Registrstion Web Service</td>
+        <th>Eureka Discovery</th>
     </tr>
     <tr>
-        <td><img src=""/></td>
+        <td><img src="images/eureka.jpg"/></td>
     </tr>
 </table>
+
+<table align="center">
+    <tr>
+        <th>Registration WS</th>
+        <th>Radars WS</th>
+        <th>Volation WS</th>
+    </tr>
+    <tr>
+        <td><img src="images/vehTest.jpg"/></td>
+        <td><img src="images/radars.jpg"/></td>
+        <td><img src="images/infractions.jpg"/></td>
+    </tr>
+</table>
+
 # Radar Simulator
 ```
 a java application that simulates a radar that randomly generates
@@ -273,3 +287,6 @@ speed excesses and send them, via GRPC, to Radar-Service
     └───generated-sources
         └───annotations
 ```
+## Radar Simulator Test
+![image](https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/assets/67378945/6f095535-f8b2-4077-9cde-900c7d07116d)
+
