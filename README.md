@@ -287,3 +287,6 @@ speed excesses and send them, via GRPC, to Radar-Service
     └───generated-sources
         └───annotations
 ```
+## Radar Simulator Test
+![image](https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/assets/67378945/6f095535-f8b2-4077-9cde-900c7d07116d)
+
