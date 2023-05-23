@@ -177,7 +177,8 @@ and the amount of the infringement.
 ```  
 ## Gateway Service
 ```
-API gateway is a software application between a client and a set of backend microservices. The API Gateway serves as a reverse proxy to accept API calls from the client application, forwarding this traffic to the appropriate servic
+API gateway is a software application between a client and a set of backend microservices.
+The API Gateway serves as a reverse proxy to accept API calls from the client application, forwarding this traffic to the appropriate servic
 ```
 ```
 ├───src
@@ -202,7 +203,8 @@ API gateway is a software application between a client and a set of backend micr
 ```
 ## Eureka Service
 ```
-The Eureka server is nothing but an implementation of service discovery pattern, where microservices can register themselves so others can discover them. This server holds information about the client service applications.
+The Eureka server is nothing but an implementation of service discovery pattern, where microservices can register themselves so others can discover them. 
+This server holds information about the client service applications.
 ```
 ```
 ├───src
@@ -225,3 +227,11 @@ The Eureka server is nothing but an implementation of service discovery pattern,
     └───generated-sources
         └───annotations
 ```
+# Radar Simulator
+```
+a java application that simulates a radar that randomly generates
+speed excesses and send them, via GRPC, to Radar-Service
+```
+![controlSd2](https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/assets/67378945/d51c6615-4b3b-4793-95f9-83cbf1da753f)
+
+
