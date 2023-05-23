@@ -73,7 +73,10 @@ public class RadarSimulationApplication implements CommandLineRunner {
                 //sendNewInfraction
                 NewInfracInfo newInfracInfo = NewInfracInfo.builder().idRadar(selectedRadar.getId()).regNbr(selectedVehicle.getRegistrationNumber()).vehicleSpeed(vehicleSpeed).build();
                 boolean results = restTempServices.senInfraction(newInfracInfo);
-                System.out.println(results);
+                System.out.println("------speed excesse------");
+                System.out.println("Radar: "+selectedRadar.toString());
+                System.out.println("Vehicle: "+selectedVehicle.toString());
+                System.out.println("vSpeed: "+vehicleSpeed);
 
             }
         };
