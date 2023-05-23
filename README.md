@@ -1,6 +1,7 @@
 # ManageViolation_APP_Spring_MS
 # Getting Started
 ## 📚Prerequisite
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
@@ -48,7 +49,10 @@ ng serve
 
 # Project: General Schema 
 ![image](https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/assets/67378945/aaa02330-718e-496d-957b-9d88037a8baf)
-# Web Services Schema
+# Class Diagram
+![DiagramApp](https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/assets/67378945/57fe2516-d0c4-4bbd-9149-318dbedb00f1)
+
+# Web Services  Schema
 There are five services in all, as stated in the project schema. Every one has a building plan.
 ## Registration Services
 ```
