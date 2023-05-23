@@ -48,7 +48,7 @@ ng serve
 
 
 # Project: General Schema 
-![image](https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/assets/67378945/aaa02330-718e-496d-957b-9d88037a8baf)
+![controlSd](https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/assets/67378945/e1d9b470-29f7-47b4-8140-44e23947bfa7)
 # Class Diagram
 ![DiagramApp](https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/assets/67378945/57fe2516-d0c4-4bbd-9149-318dbedb00f1)
 
