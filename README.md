@@ -109,4 +109,66 @@ There are five services in all, as stated in the project schema. Every one has a
         └───dev
             └───elma
                 └───infractin_ms
-```                
+```  
+## Gateway Service
+```
+├───src
+│   ├───main
+│   │   ├───java
+│   │   │   └───dev
+│   │   │       └───elma
+│   │   │           └───gateway_ms
+│   │   └───resources
+│   └───test
+│       └───java
+│           └───dev
+│               └───elma
+│                   └───gateway_ms
+└───target
+    ├───classes
+    │   └───dev
+    │       └───elma
+    │           └───gateway_ms
+    └───generated-sources
+        └───annotations
+```
+## Eureka Service
+```
+├───src
+│   ├───main
+│   │   ├───java
+│   │   │   └───dev
+│   │   │       └───elma
+│   │   │           └───eureka_discovery_ms
+│   │   └───resources
+│   └───test
+│       └───java
+│           └───dev
+│               └───elma
+│                   └───eureka_discovery_ms
+└───target
+    ├───classes
+    │   └───dev
+    │       └───elma
+    │           └───eureka_discovery_ms
+    └───generated-sources
+        └───annotations
+```
+# Project Dependencies
+<table>
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3schools.com">Visit W3Schools</a></td>
+        <td><a href="https://www.w3schools.com">Visit W3Schools</a></td>
+        <td><a href="https://www.w3schools.com">Visit W3Schools</a></td>
+        <td><a href="https://www.w3schools.com">Visit W3Schools</a></td>
+        <td><a href="https://www.w3schools.com">Visit W3Schools</a></td>
+    </tr>
+</table>
+
